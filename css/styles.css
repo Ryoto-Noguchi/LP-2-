@@ -1,0 +1,766 @@
+/* ページ全体 */
+@import url('https://fonts.googleapis.com/css?family=Sawarabi+Mincho');
+
+html {
+  font-size: calc(100vw /32);
+  overflow-x: hidden;
+  background-color: rgba(161, 227, 253, 0.7);
+  margin: 0em;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+
+p {
+  font-size: .5rem;
+}
+
+body {
+  margin: 0em;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 0em;
+  overflow-x: hidden;
+  font-family: "游明朝体", "Yu Mincho", sans-serif;
+}
+ul {
+  list-style-type: none;
+  padding: 0em;
+  margin: 0em;
+}
+
+.bg-principal {
+  background-color: rgba(161, 227, 253, 0.7);
+}
+
+/* スマホ幅ヘッダー背景*/
+/* @media (max-width: 575px) {
+  header {
+    background-image: url('../img/mirror.jpg');
+    background-size: cover;
+    background-position-x: 0%;
+    height: 100vh;
+  }
+} */
+
+header {
+  background-image: url('../img/top-row.jpg');
+  background-size: cover;
+  background-position-x: 0px;
+  height: 100vh;
+}
+
+@media (max-width:500px) {
+  header {
+    background-image: url('../img/pose10.jpg');
+    background-size: cover;
+    background-position-x: 40%;
+    height: 100vh;
+  }
+}
+
+/* トップ動画 */
+/* #bg-video {
+  right: 0;
+  bottom: 0em;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: 100%;
+  z-index: -100;
+  background: url('./img/mirror.jpg');
+  background-size: cover;
+} */
+
+@media (max-width:575px) {
+  video {
+    display: none;
+  }
+}
+
+/* ハンバーガーメニュー */
+
+.hamburger-icon {
+  position: fixed;
+  right: 1rem;
+  top: 1rem;
+  z-index:1200;
+}
+
+.hamburger-icon:hover {
+  cursor: pointer !important; 
+  opacity: .7 !important;
+}
+
+.hamburger-line {
+  border-bottom: solid 3px black;
+  width: 30px;
+  margin: 5px 0;
+}
+
+.hamburger {
+  position: absolute;
+  background: rgba(161, 227, 253, 1);
+  z-index: 998;
+  height: 100vh;
+  width: 100vw;
+  visibility: none;
+  transition: all .4s ease;
+  opacity: 0;
+
+}
+.hamburger.open {
+  visibility: visible;
+  opacity: 1;
+
+}
+
+/* .menu-item {
+  transform: translate(30%, 0);
+  transition: .6s ease;
+}
+
+.menu-item.open {
+  transform: translate(0, 0);
+} */
+
+.menu-item a {
+  color: black;
+}
+
+@media (min-width:576px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+
+
+html.open {
+  overflow-y: hidden !important;
+}
+
+/* ロゴ*/
+#logo {
+  width: 100px;
+  z-index: 1500;
+  position: fixed;
+  left: 2rem;
+  box-shadow: 0 0 0 4px #fff, 2px 2px 4px 4px silver;
+  padding: 0;
+}
+
+@media (min-width:900px) {
+  #logo {
+    width: 150px;
+  }
+}
+
+ 
+/* 固定ヘッダーメニュー */
+
+.navbar {
+  z-index: 1400;
+  position: fixed;
+  top: 20px !important;
+  top: 0;
+  width: 100%;
+}
+
+
+.navbar-nav {
+  visibility: hidden;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  height: 80px;
+  vertical-align: middle;
+  background-color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@media (min-width:576px) {
+  .navbar-nav {
+    visibility: visible;
+  }
+}
+
+.nav-link {
+  color: rgba(71, 71, 71, 0.562);
+  padding: 1rem !important;
+  margin-top: 20px;
+}
+
+.nav-link:hover {
+  cursor: pointer !important;
+  opacity: .7;
+}
+
+@media (min-width:700px) {
+  .nav-item {
+    font-size: 24px;
+  }
+}
+
+/* トップタイトル */
+
+.bg-principal {
+  position: relative;
+}
+
+#top-title {
+  position: absolute !important;
+  bottom: -40px;
+  left: 20%;
+  transform: translateX(-50%);
+  writing-mode: vertical-rl;
+  margin-bottom: 0px;
+  font-family: "游明朝体", "Yu Mincho", sans-serif;
+}
+
+#top-title h1 {
+  margin-bottom: 0;
+}
+
+@media (max-width:500px) {
+  #top-title {
+    left: 0;
+    transform: translateX(0%);
+    transform: translateY(-50%);
+
+    
+  }
+}
+
+@media (min-width:980px) {
+  #top-title h1 {
+    font-size: 70px !important;
+    
+  }
+}
+
+/* 追従申込ボタン */
+#apply-circle {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background: #8accdb;
+  display: inline-block;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  z-index: 20;
+  text-align: center;
+  vertical-align: middle;
+  transition: all .4s ease 0s;
+}
+
+#apply-circle:hover {
+  opacity: .8;
+  transform: scale(1.2);
+}
+
+#apply-circle h3 {
+  font-size: .7rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgb(80, 80, 80);
+
+}
+
+/* Youtube埋め込み */
+/* #youtube {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+#youtube iframe {
+ overflow-x: hidden !important; 
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ z-index: 1001 !important;
+}
+
+@media (min-width:700px) {
+  #youtube, #youtube iframe {
+    display: none;
+  }
+  #youtube-lg {
+    display: block !important;
+  }
+} */
+
+/* bprojectの目的 */
+
+#philosophy .q-title, #philosophy .q-answer {
+  border: none;
+}
+
+#philosophy .q-answer {
+  text-align: left;
+}
+
+.color-red {
+  color: red;
+}
+
+/* 悩み */
+
+#inquietude, #problems, #for-you ,#what-is ,#chart ,#points, #plans, #pricelist, #FAQ, #campagne-btn, #access, #studio {
+  transition: all 0.8s ease 0s;
+}
+
+.underline-yellow {
+  background: linear-gradient(rgba(255,255,0,0) 40%, yellow 90%);
+  background: -webkit-linear-gradient(rgba(255,255,0,0) 40%, yellow 90%);
+}
+
+@media (max-width:500px) {
+  .underline-yellow {
+    background: none;
+    text-decoration: underline;
+    text-decoration-color: yellow;
+    border-width: 50px !important;
+    text-underline-position: above;
+  }
+}
+
+/*セルフエステとは？ */
+#self {
+  margin: 50px;
+  /* border: 2px solid skyblue; */
+}
+
+
+
+#self h3 {
+  color: rgb(104, 104, 104);
+  background: linear-gradient(rgba(135, 206, 235, 0) 40%, rgb(135, 206, 235));
+  background: -webkit-linear-gradient(rgba(135, 206, 235, 0) 40%, rgb(135, 206, 235));
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+  
+}
+
+@media (max-width:500px) {
+  #self h3 {
+    background: none;
+    text-decoration: underline;
+    text-decoration-color: skyblue;
+  }
+}
+
+#self h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+
+/* ５つのアピールポイント -sp-*/
+
+#service h2 {
+  font-weight: bold;
+}
+
+@media (min-width:500px) and (max-width:600px) {
+   #apeal .card-title {
+    font-size: 10px;
+    font-weight: bold;
+  }
+  .card-text {
+    font-size: 6px !important;
+  }
+  #-box .w-75 {
+  width: 95% !important;
+  }
+}
+
+@media (min-width:601px) and (max-width:700px) {
+  #apeal .w-75 {
+    width: 95% !important;
+    }
+  .card-title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+
+@media (min-width:500px) {
+  #apeal-points-sp {
+    display: none;
+  }
+}
+
+#apeal-points-sp .card {
+  position: relative;
+}
+
+.number {
+  position: absolute;
+  font-size: 5rem;
+  top: 1rem;
+  left: 1rem;
+  color: #8accdb;
+}
+
+#apeal-points-sp .card img {
+  max-height: 212px;
+  object-fit: cover;
+}
+
+#apeal-points-sp .card-title {
+  font-weight: bold;
+  color: #8accdb;
+  font-size: 20px;
+}
+
+/* ５つのアピールポイント -pc-*/
+@media (max-width:499px) {
+  #apeal {
+    display: none;
+  }
+}
+@media (min-width:500px) {
+  .apeal-box {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    opacity: 0;
+    transition: all 0.4s ease-in;
+    transform: translateX(-50%);
+  }
+  .card-img-slide {
+    opacity: 0;
+    transition: all 0.4s ease-in 0.4s;
+    transform: translateX(-50%);
+  }
+  .card-body-slide {
+    opacity: 0;
+    transition: all 0.4s ease-in 0.8s;
+    transform: translateX(-50%);
+  }
+
+  .apeal-box-1 {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    opacity: 0;
+    transition: all 0.4s ease-in;
+    transform: translateX(50%);
+  }
+  .card-img-slide-1 {
+    opacity: 0;
+    transition: all 0.4s ease-in 0.4s;
+    transform: translateX(50%);
+  }
+  .card-body-slide-1 {
+    opacity: 0;
+    transition: all 0.4s ease-in 0.8s;
+    transform: translateX(50%);
+  }
+
+  .apeal-box-2 {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    opacity: 0;
+    transition: all 0.4s ease-in;
+    transform: translateX(-50%);
+  }
+  .card-img-slide-2 {
+    opacity: 0;
+    transition: all 0.4s ease-in 0.4s;
+    transform: translateX(-50%);
+  }
+  .card-body-slide-2 {
+    opacity: 0;
+    transition: all 0.4s ease-in 0.8s;
+    transform: translateX(-50%);
+  }
+
+  .apeal-box-3 {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    opacity: 0;
+    transition: all 0.4s ease-in;
+    transform: translateX(50%);
+  }
+  .card-img-slide-3 {
+    opacity: 0;
+    transition: all 0.4s ease-in 0.4s;
+    transform: translateX(50%);
+  }
+  .card-body-slide-3 {
+    opacity: 0;
+    transition: all 0.4s ease-in 0.8s;
+    transform: translateX(50%);
+  }
+
+  .apeal-box-4 {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    opacity: 0;
+    transition: all 0.4s ease-in;
+    transform: translateX(-50%);
+  }
+  .card-img-slide-4 {
+    opacity: 0;
+    transition: all 0.4s ease-in 0.4s;
+    transform: translateX(-50%);
+  }
+  .card-body-slide-4 {
+    opacity: 0;
+    transition: all 0.4s ease-in 0.8s;
+    transform: translateX(-50%);
+  }
+
+}
+
+.card-img-slide, .card-img-slide-1, .card-img-slide-2, .card-img-slide-3, .card-img-slide-4  {
+  width: 50%;
+  height: auto;
+}
+
+#apeal .card-body {
+  padding: 0;
+  margin: 0 10px;
+}
+
+.star {
+  color: skyblue;
+}
+
+
+/* メリット */
+#merit .card-body {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+/* 料金 */
+/* #price .container {
+  border: 1px solid black;
+  border-radius: 5px;
+} */
+
+table {
+  border: none;
+}
+
+thead {
+  background: skyblue;
+}
+
+@media(max-width:500px) {
+  thead th {
+    padding: 0 !important;
+    margin: 4px auto;
+  }
+}
+/* .table {
+  font-size: 14px;
+  word-break: break-all;
+}
+
+@media (max-width:500px) {
+  .table {
+    font-size: 8px !important; 
+  }
+} */
+
+tbody th, tbody td {
+  padding: 0 !important;
+  vertical-align: middle !important;
+}
+
+th, td {
+  border-top: skyblue solid 1px;
+  border-bottom: skyblue solid 1px;
+}
+
+tbody tr:hover {
+  background: rgba(161, 227, 253, 0.4) !important;
+  /* opacity: 0.7 !important; */
+}
+
+@media (min-width:500px) and (max-width:767px) {
+  thead th, tbody th, tbody td {
+    font-size: 14px;
+  }
+}
+
+@media (min-width:767px) {
+  thead th, tbody th, tbody td {
+    font-size: 20px;
+  }
+}
+/* @media (min-width:1200px) {
+  thead th, tbody th, tbody td {
+    font-size: 32px;
+  }
+} */
+/* アクセス */
+
+.googlemap {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.googlemap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 300px;
+}
+
+.adress {
+  display: flex;
+  align-items: center;
+}
+
+/* スタジオ */
+#studio .card {
+  border: skyblue 1px solid;
+}
+
+#studio a {
+  width: 100%;
+  font-size: 16px;
+  border-radius: 30px;
+  border: 2px skyblue solid;
+  color: skyblue;
+}
+
+#studio .card-body {
+  text-align: center;
+}
+
+@media (max-width:500px) {
+  #studio a {
+    font-size: 10px;
+  }
+}
+
+@media  (max-width:769px) {
+  #studio a {
+    width: 50%;
+  }
+}
+
+
+@media (min-width:769px) {
+  #studio .card-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  #studio .card-text {
+    margin-bottom: 10px;
+    font-size: 10px;
+  }
+  #studio .card-body {
+    padding: 20px;
+  }
+}
+
+
+
+
+/* FAQ */
+.q-title, .q-answer {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 auto;
+  border: #8accdb 2px solid;
+  border-radius: 5px ;
+  position: relative;
+}
+
+#FAQ .q-title, #FAQ .q-answer {
+ background: #bbeefa;
+
+}
+
+.q-answer {
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+}
+
+.q-title::after {
+  content: '\f078';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  position: absolute;
+  display: block;
+  top: 0;
+  right: .5rem;
+  font-size: 1em;
+  width: 1em;
+  height: 1em;
+  transition: .4s ease;
+}
+
+.q-title:hover {
+  cursor: pointer;
+  opacity: .5;
+}
+
+.active.q-title::after {
+  transform: rotate(180deg);
+  top:.5em
+}
+
+/* ボタン */
+.btn {
+  width: 30%;
+}
+
+.btn:hover {
+  cursor: pointer;
+  opacity: .7;
+}
+
+/* フッター */
+footer {
+  background: rgba(161, 227, 253, 1);
+}
+footer .container {
+  margin-top: 50px;
+}
+.footer-title {
+  text-align: center;
+}
+
+#sns-box {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sns-icon a, .footer-text a {
+  color: rgb(121, 121, 121);
+}
+
+.sns-icon a:hover {
+  opacity: .7;
+  cursor: pointer;
+}
+@media (max-width:767px) {
+  .footer-text-box {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}

@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>エステクラブ</title>
+
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+      <link rel="stylesheet" href="path/to/bootstrap-social.css" />
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+      <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/styles.css">
+      <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css"/>
+      <link rel="stylesheet" type="text/css" href="./slick/slick.css"/>
+  </head>
+  
+  <body>
+    <header class="bg-principal">
+      <!-- 固定ロゴ -->
+      <a href="#">
+        <img id="logo" class="navbar-brand" src="img/logo2.jpg" alt="ロゴ">
+      </a>
+       <!--固定ナビバー-->
+       <nav class="navbar navbar-expand p-0">
+        <ul class="navbar-nav p-0">
+          <li class="nav-item"><a href="#" class="nav-link p-1">TOP</a></li>
+          <li class="nav-item"><a href="#self" class="nav-link p-1 ">About</a></li>
+          <li class="nav-item"><a href="#price" class="nav-link p-1">Price</a></li>
+          <li class="nav-item"><a href="#access" class="nav-link p-1">Access</a></li>
+          <li class="nav-item"><a href="#FAQ" class="nav-link p-1">Inquiry</a></li>
+        </ul>
+      </nav><!--/nav-->
+
+      <!-- トップ動画 -->
+      <!-- <div class="main-visual d-inline">
+        <video autoplay loop muted src="./img/fitness.mp4" poster="" id="bg-video"></video>
+      </div> -->
+
+      <!-- ハンバーガーメニュー -->
+      <div class="header-screen">
+
+        <div class="hamburger-icon d-sm-none">
+          <div class="hamburger-line" id="line1"></div>
+          <div class="hamburger-line" id="line2"></div>
+          <div class="hamburger-line" id="line3"></div>
+        </div><!--/hamburger-icon-->
+
+        <div class="hamburger">
+          <div class="hamburger-menu">
+            <ul class="text-center mt-5 pt-5"  >
+              <li class="menu-item py-4"><a href="#">TOP</a><li>
+              <li class="menu-item py-4"><a href="#self">About</a><li>
+              <li class="menu-item py-4"><a href="#price">Price</a><li>
+              <li class="menu-item py-4"><a href="#access">Access</a><li>
+              <li class="menu-item py-4"><a href="#">Inquiry</a><li>
+            </ul>
+          </div>
+        </div><!--/hamburger-->
+        
+        <!-- 追従申込ボタン -->
+        <a href="#">
+          <div id="apply-circle">
+            <h3>体験申し込みは<br>こちらから</h3>
+          </div>
+        </a>
+
+      </div>   
+
+      <div id="top-title" class="text-center">
+        <h1>理想の体を　　　<br>プロジェクト。</h1>
+      </div>
+    </header>
+    <main>
+
+      <!-- お知らせ -->
+      <div class="news mt-3">
+        <h4 class="text-center">＼　News　／</h4>
+        <div class="slider">
+          <div class="text-center">
+            <p><a href="#" style="color: skyblue;">富山駅前 MARIE店　2020/4上旬　new open </a></p>
+          </div>
+          <div class="text-center">
+            <p><a href="news.html" style="color: skyblue;">コロナウイルス感染予防対策</a></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- サービス理念 -->
+      <section id="philosophy">
+        <dl class="py-2 my-0 bg-principal">
+          <dt class="q-title philosophy-title" id="reason">bprojectの目的<br><span class="click-hide"><small>悩めるあなたの最大限のパートーナーになれたらと 考え、自分づくりの継続がし易く 自分だけをしっかり見つめる場を提供 出来ないかとセルフエステの場を設けました...</small></span></dt>
+          <dd class="answer-box">
+            <ul class="p-0 ">
+              <li class="q-answer mb-0 philosophy-text">
+                自分のカラダは自分が一番理解していると思います。<br>
+                ・肌を綺麗にしたい <br>
+                ・小顔にしたい <br>
+                ・クビレをくっきりさせたい  <br>
+                ・クビレをくっきりさせたい  <br>
+                ・二の腕のたるみを引き締めたい <br>
+                ・脱毛をしたい <br>
+                女性の悩みは数え切れない程存在します。<br>
+                 しかし全てには <br>
+                <span class=color-red>知識 努力 我慢 体力 時間 お金</span> <br>
+                が最低限付きまといます。<br>
+                 　この中でも時間とお金にトピックを当て女性の中には子育て中の方や お仕事の忙しい方やお小遣いが少ない方や学生さんなどがいて、幅広くそして 誰にでも敷居を低くしてどんな女性にも” 美 ” を追求できる 場所を作りたいと考えました。<br>
+                　b には世界共通の様々な美容に対する強い意味合いがこめられています。 <br>
+                　project とは大きな目標を達成するための計画と言う意味を持ちます。<br>
+                　美に近道はない 継続こそが近道だと考えています。 <br>
+                　そこでビープロジェクトでは悩めるあなたの最大限のパートーナーになれたらと 考え、自分づくりの継続がし易く 自分だけをしっかり見つめる場を提供 出来ないかとセルフエステの場を設けました。<br>
+                　このチャンスを活かして自分を納得いくまで磨いてください。 <br>
+                　そして、輝いてください。<br>
+                　それがビープロジェクトの真の目的です。
+              </li>
+            </ul>
+          </dd>
+        </dl>
+      </section>
+
+
+      <!-- お悩み -->
+      <div class="mt-3">
+        <h3 class="text-center" style="color: skyblue;" id="inquietude">＼こんなお悩みはありませんか？／</h3>
+        <img src="./img/thinking1.png" width="100%" alt="" id="problems">
+        <h3 class="text-center" style="color: skyblue;" id="for-you">そんなあなたにこそ、<br><span class="underline-yellow">セルフエステ</span>を知って欲しい！</h3>
+      </div>
+
+      <hr>
+
+      <!-- セルフエステとは？ -->
+      <section id="self">
+        <h2 class="text-center" style="color: skyblue;" id="what-is">＼『セルフエステ』とは？／</h2>
+        <div class="container d-flex" id="chart">
+          <div class="text-center">
+            <img src="./img/self.png" width="100%" alt="">
+            <img src="./img/equal.png" width="25%" alt="">
+            <h3>エステができる</h3>
+          </div>
+        </div>
+      </section>
+
+      <!--５つのポイント-->
+
+      <section id="service">
+        <!-- Youtube -->
+        <!-- <div id="youtube" class="pt-3">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/k43nqCNCpOQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div id="youtube-lg" class="pt-3 d-none text-center">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/k43nqCNCpOQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div> -->
+
+        <hr>
+
+        <!--５つのアピールポイント  -->
+
+
+        <h2 class="text-center my-3" id="points"><span class="star">＼bprojectの５つのポイント／</span></h2>
+        <div id="apeal-points-sp">
+          <div class="card ">
+            <img src="./img/pose16.jpg" alt="" class="card-img">
+            <h4 class="number">01</h4>
+            <div class="card-body">
+              <h6 class="card-title">最先端の高級マシンが使い放題</h6>
+              <p class="card-text">大手サロンや高級サロンでも数台しかない機器を手軽に扱えてプロのエステマシンを心ゆくまで体感できます。<br>
+                痩身器、美顔器、HIFU、脱毛器 ここまで揃っているセルフエステはbprojectだけです。<br>
+                思う存分綺麗を追求しましょう。</p>
+            </div>
+          </div>
+        </div>
+        <div id="apeal-points-sp">
+          <div class="card ">
+            <img src="./img/pose14.jpg" alt="" class="card-img">
+            <h4 class="number">02</h4>
+            <div class="card-body">
+              <h6 class="card-title">完全個室のプライベート空間</h6>
+              <p class="card-text">bprojectは全室完全個室なプライベート空間なので自分の気になるポイントを好きなだけアタックできます。<br>
+                そして人に気を使わずじっくりと自分の身体と向き合いプロジェクトしましょう。</p>
+            </div>
+          </div>
+        </div>
+        <div id="apeal-points-sp">
+          <div class="card ">
+            <img src="./img/picture1.jpg" alt="" class="card-img">
+            <h4 class="number">03</h4>
+            <div class="card-body">
+              <h6 class="card-title">通い放題</h6>
+              <p class="card-text">全ての女性に共通する” 美 ” を全ての女性に 手に入れられるキッカケにしていただきたい。” 美 ” への近道はしっかりと続ける事 <br>
+              【継続は力なり】<br>
+              通うことに結果がついてきます。<br>
+              待ち合わせの合間、仕事終わり、 休みの日、自分の好きな時間にいつでも通っていただけます。</p>
+            </div>
+          </div>
+        </div>
+        <div id="apeal-points-sp">
+          <div class="card ">
+            <img src="./img/pose12.jpg" alt="" class="card-img">
+            <h4 class="number">04</h4>
+            <div class="card-body">
+              <h6 class="card-title">定額で圧倒的な低価格</h6>
+              <p class="card-text">高級サロンでは一回の施術で 2~3 万円ですが bproject では セルフでエステを行う事で一般的なエステと比べて定額で圧倒的な低価格を 実現でき本来のエステと変わらない最新最強のコスパ。</p>
+            </div>
+          </div>
+        </div>
+        <div id="apeal-points-sp">
+          <div class="card ">
+            <img src="./img/pose15.jpg" alt="" class="card-img">
+            <h4 class="number">05</h4>
+            <div class="card-body">
+              <h6 class="card-title">フラッと寄れる気軽さ</h6>
+              <p class="card-text">スケジュールを合わせながらの予約を取らなく ても時間の空いた時や待ち合わせの隙間などに行ける。<br>
+                 ジム感覚で通える新感覚エステです。</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="container-fluid " id="apeal">
+          <div class="row my-3">
+            <div class="col d-flex pl-0 ">
+              <div class=" bg-principal w-75 d-flex p-3 pl-0 apeal-box">
+                <img class="card-img card-img-slide" src="./img/pose16.jpg" alt="">
+                <div class="card-body card-body-slide">
+                  <h6 class="card-title">最先端の高級マシンが使い放題</h6>
+                  <p class="card-text">大手サロンや高級サロンでも数台しかない機器を手軽に扱えてプロのエステマシンを心ゆくまで体感できます。<br>
+                    痩身器、美顔器、HIFU、脱毛器 ここまで揃っているセルフエステはbprojectだけです。<br>
+                    思う存分綺麗を追求しましょう。</p>
+                </div>
+              </div><!--/apeal-box-->
+            </div><!--/col-->
+          </div><!--/row-->
+
+          <div class="row my-3">
+            <div class="col d-flex pr-0 justify-content-end">
+              <div class=" bg-principal w-75 d-flex p-3 pl-0 apeal-box-1">
+                <div class="card-body card-body-slide-1">
+                  <h6 class="card-title">完全個室のプライベート空間</h6>
+                  <p class="card-text">bprojectは全室完全個室なプライベート空間なので自分の気になるポイントを好きなだけアタックできます。<br>
+                    そして人に気を使わずじっくりと自分の身体と向き合いプロジェクトしましょう。</p>
+                </div>
+                <img class="card-img card-img-slide-1" src="./img/pose14.jpg" alt="">
+              </div><!--/apeal-box-->
+            </div><!--/col-->
+          </div><!--/row-->
+
+            <div class="row my-3">
+              <div class="col d-flex pl-0 ">
+                <div class=" bg-principal w-75 d-flex p-3 pl-0 apeal-box-2">
+                  <img class="card-img card-img-slide-2" src="./img/picture1.jpg" alt="">
+                  <div class="card-body card-body-slide-2">
+                    <h6 class="card-title">通い放題</h6>
+                    <p class="card-text">全ての女性に共通する” 美 ” を全ての女性に 手に入れられるキッカケにしていただきたい。” 美 ” への近道はしっかりと続ける事 <br>
+                      【継続は力なり】<br>
+                      通うことに結果がついてきます。<br>
+                      待ち合わせの合間、仕事終わり、 休みの日、自分の好きな時間にいつでも通っていただけます。</p>
+                  </div>
+                </div><!--/apeal-box-->
+              </div><!--/col-->
+            </div><!--/row-->
+
+            <div class="row my-3">
+              <div class="col d-flex pr-0 justify-content-end">
+                <div class=" bg-principal w-75 d-flex p-3 pl-0 apeal-box-3">
+                  <div class="card-body card-body-slide-3">
+                    <h6 class="card-title">定額で圧倒的な低価格</h6>
+                    <p class="card-text">高級サロンでは一回の施術で 2~3 万円ですが bproject では セルフでエステを行う事で一般的なエステと比べて定額で圧倒的な低価格を 実現でき本来のエステと変わらない最新最強のコスパ。</p>
+                  </div>
+                  <img class="card-img card-img-slide-3" src="./img/pose12.jpg" alt="">
+                </div><!--/apeal-box-->
+              </div><!--/col-->
+            </div><!--/row-->
+
+            <div class="row my-3">
+              <div class="col d-flex pl-0 ">
+                <div class=" bg-principal w-75 d-flex p-3 pl-0 apeal-box-4">
+                  <img class="card-img card-img-slide-4" src="./img/pose15.jpg" alt="">
+                  <div class="card-body card-body-slide-4">
+                    <h6 class="card-title">フラッと寄れる気軽さ</h6>
+                    <p class="card-text">スケジュールを合わせながらの予約を取らなく ても時間の空いた時や待ち合わせの隙間などに行ける。<br>
+                       ジム感覚で通える新感覚エステです。</p>
+                  </div>
+                </div><!--/apeal-box-->
+              </div><!--/col-->
+            </div><!--/row-->
+        </div><!--/container-->
+
+      </section><!--/#service-->
+
+     <hr>
+
+      <!-- 料金表 -->
+      <h2 class="text-center" style="color: skyblue; font-weight: bold;" id="plans">＼プラン一覧／</h2>
+      <section id="price" class="">
+       <div class="d-flex justify-content-center" id="pricelist"> 
+        <div class="container  p-0 m-0">
+          <table class="table table-hover text-center">
+            <thead class="text-white">
+              <tr><th>プラン</th><th>利用時間</th><th>利用可能時間</th><th>料金</th><th>使用マシン</th></tr>
+            </thead>
+            <tbody style="color: skyblue;">
+              <tr><th>初回体験</th><td>45min</td><td>ALL TIME</td><td>0円</td><td class="text-left" style="font-size: 0.4rem;" >・キャビテーション</span><br>・ラジオ波(RF)<br>・EMS吸引<br>　</td></tr>
+              <tr><th>都度会員</th><td>45min</td><td>ALL TIME</td><td>5000円</td><td class="text-left" style="font-size: 0.4rem;" >・キャビテーション</span><br>・ラジオ波(RF)<br>・EMS吸引<br>　</td></tr>
+              <tr><th>ブロンズ</th><td>45min</td><td>平日<br>10:00〜15:00</td><td>8800円</td><td class="text-left" style="font-size: 0.4rem;" >・キャビテーション</span><br>・ラジオ波(RF)<br>・EMS吸引<br>・HIFU</td></tr>
+              <tr><th>シルバー</th><td>45min</td><td>平日<br>10:00〜15:00</td><td>9800円</td><td class="text-left" style="font-size: 0.4rem;" >・キャビテーション</span><br>・ラジオ波(RF)<br>・EMS吸引<br>・HIFU</td></tr>
+              <tr><th>ゴールド</th><td>75min</td><td>ALL TIME</td><td>12800円</td><td class="text-left" style="font-size: 0.4rem;" >・キャビテーション</span><br>・ラジオ波(RF)<br>・EMS吸引<br>・HIFU</td></tr>
+              <tr><th>プラチナ</th><td>90min</td><td>ALL TIME</td><td>16800円</td><td class="text-left" style="font-size: 0.4rem;" >・キャビテーション</span><br>・ラジオ波(RF)<br>・EMS吸引<br>・HIFU</td></tr>             
+            </tbody>
+          </table>
+        </div>
+         <!-- <img src="./img/pricelist.png" id="bugpic" width="80%" alt=""> -->
+       </div>
+      </section><!--/#price-->
+
+      <hr>
+      <section id="studio">
+        <h4 class="serction-title text-center mt-4"  style="color: skyblue; font-weight: bold;">＼Studio／</h4>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-lg-4 py-2">
+              <div class="card">
+                <img src="./img/gym.jpeg" alt="" class="card-img">
+                <div class="card-body">
+                  <h6 class="card-title">TOYAMA MARIE</h6>
+                  <p class="card-text">富山県富山市桜町１丁目１番６１号　マリエとやま２F</h6></p>
+                  <a href="" class="btn">スタジオの詳細はこちら</a>
+                </div>
+              </div>
+            </div><!--/col-->
+            <div class="col-md-6 col-lg-4 py-2">
+              <div class="card">
+                <img src="./img/gym.jpeg" alt="" class="card-img" style="opacity: .5;">
+                <div class="card-body">
+                  <h6 class="card-title">Coming Soon</h6>
+                  <p class="card-text">　</p>
+                  <a href="" class="btn disabled">スタジオの詳細はこちら</a>
+                </div>
+              </div>
+            </div><!--/col-->
+            <div class="col-md-6 col-lg-4 py-2">
+              <div class="card">
+                <img src="./img/gym.jpeg" alt="" class="card-img" style="opacity: .5;">
+                <div class="card-body">
+                  <h6 class="card-title">Coming Soon</h6>
+                  <p class="card-text">　</p>
+                  <a href="" class="btn disabled">スタジオの詳細はこちら</a>
+                </div>
+              </div>
+            </div><!--/col-->
+          </div><!--/row-->
+        </div>
+      </section>
+
+      <hr>
+
+      <section id="FAQ" class="">
+        <h4 class="serction-title text-center mt-4"  style="color: skyblue; font-weight: bold;">＼FAQ／</h4>
+        
+        <div class="FAQ-box">
+          <dl class="pb-1 m-0">
+            <dt class="q-title">初回体験に費用はかかりますか？</dt>
+            <dd class="answer-box">
+              <ul class="p-0 ">
+                <li class="q-answer mb-0">
+                  いいえ、初回体験は無料ですので、お気軽にご参加ください。
+                </li>
+              </ul>
+            </dd>
+          </dl>
+          <dl class="pb-1 m-0">
+            <dt class="q-title">月額会員になったら、他に費用はかかりますか？</dt>
+            <dd class="answer-box">
+              <ul class="p-0 ">
+                <li class="q-answer mb-0">
+                  いいえ、月額会員費以外にかかる費用はございません。 
+                </li>
+              </ul>
+            </dd>
+          </dl>
+          <dl class="pb-1 m-0">
+            <dt class="q-title">待ち時間はありますか？</dt>
+            <dd class="answer-box">
+              <ul class="p-0 ">
+                <li class="q-answer mb-0">
+                  Answer. Answer. Answer. Answer. Answer. Answer. Answer. Answer. Answer. Answer. Answer. Answer.  
+                </li>
+              </ul>
+            </dd>
+          </dl>
+          <dl class="pb-1 m-0">
+            <dt class="q-title">セルフエステはちゃんと効果があるのですか？</dt>
+            <dd class="answer-box">
+              <ul class="p-0 ">
+                <li class="q-answer mb-0">
+                  Answer. Answer. Answer. Answer. Answer. Answer. Answer. Answer. Answer. Answer. Answer. Answer.  
+                </li>
+              </ul>
+            </dd>
+          </dl>
+          <dl class="pb-1 m-0">
+            <dt class="q-title">初回体験の際に勧誘されますか？</dt>
+            <dd class="answer-box">
+              <ul class="p-0 ">
+                <li class="q-answer mb-0">
+                  Answer. Answer. Answer. Answer. Answer. Answer. Answer. Answer. Answer. Answer. Answer. Answer.  
+                </li>
+              </ul>
+            </dd>
+          </dl>
+        </div><!--/FAQ-box-->
+      </section>
+      
+      <div class="apply-btn-box text-center my-2" id="campagne-btn">
+        <button class="btn btn-secondary">申し込みはこちら</button>
+        <button class="btn btn-secondary"><a href="mailto:example@gmail.com" style="color: white;">お問い合わせ</a></button>
+      </div>
+
+        <hr>
+
+        <!-- アクセス -->
+        <section id="access" class="my-4">
+          <h4 class="serction-title text-center" style="color: skyblue; font-weight: bold;">＼アクセス／</h4>
+            
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 adress">
+                <div class="card-body text-center">
+                  <h6 class="card-title text-left adress">富山県富山市桜町１丁目１番６１号<br>マリエとやま２F</h6>
+                  <!-- <p class="card-text">行き方　行き方　行き方　</p> -->
+                </div><!--/card-body-->
+              </div><!--/col-->
+  
+              <div class="col-sm-6">
+                <div class="googlemap ">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.921247627811!2d137.21184156514153!3d36.7004302799692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff7909c821dc323%3A0x411b695963500c9d!2z44Oe44Oq44Ko44Go44KE44G-!5e0!3m2!1sja!2sjp!4v1584351826481!5m2!1sja!2sjp"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+              </div> <!--/col-->
+            </div><!--/row-->
+          </div><!--/container-->
+        </section>
+ 
+    </main>
+    <footer class="d-flex justify-content-center">
+      <div class="container m-0 ">
+        <div class="row ">
+          <div class="col my-3">
+            <ul class="footer-text-box d-flex justify-content-around">
+              <li class="footer-text"><a href=#>TOP</a></li>
+              <li class="footer-text"><a href=#self>About</a></li>
+              <li class="footer-text"><a href=#access>Access</a></li>
+              <li class="footer-text"><a href=#FAQ>Inquiry</a></li>
+            </ul>
+          </div><!--/col-->
+        </div>
+
+        <div class="row">
+          <div class="col my-3 text-center">
+           <img src="./img/logo1.png" width="35%" alt="">
+          </div><!--/col-->
+        </div>
+
+        <div class="row">
+          <div class="col my-3">
+            <!-- <h6 class="footer-title">見出し3</h6> -->
+            <ul id="sns-box">
+              <li class="sns-icon">
+                <a href="#">
+                  <i class="fab fa-twitter-square fa-2x tw-blue"></i>
+                </a>
+              </li>
+              <li class="sns-icon">
+                <a href="#">
+                 <span class="insta"><i class="fab fa-instagram fa-2x"></i></span> 
+                </a>
+              </li>
+              <li class="sns-icon">
+                <a href="#">
+                 <i class="fab fa-youtube fa-2x youtube-red"></i>
+                </a>
+              </li>
+              <li class="sns-icon">
+                <a href="#">
+                  <i class="fab fa-facebook-square fa-2x fb-blue"></i>
+                </a>
+              </li>
+            </ul>
+          </div><!--/col-->
+        </div><!--/row-->
+      </div><!--/container-->
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="./slick/slick.min.js"></script>
+
+    <script>
+        $('.slider').slick({
+          autoplay: true,
+        });
+
+        $('.hamburger-icon').on('click', function() {
+        $('.hamburger').toggleClass('open');
+        $('html').toggleClass('open');
+        $('body').toggleClass('open');
+        $('.menu-item').toggleClass('open');
+      });
+
+
+      $('.hamburger-icon').on('click', function () {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 000); //0秒かけてトップへ移動
+            return false;
+        });
+
+      $('#reason').on('click', function () {
+        $('.click-hide').css('display','none');
+      });
+
+      $('.answer-box').hide();
+      $('.q-title').on('click', function() {
+        $(this).next(). slideToggle(300);
+        $(this).toggleClass('active');
+      });
+      
+      $('.apeal-box').css('transform','translateX(-50%)');
+      $(window).scroll(function() {
+        var windowH = $(window).height(),
+        scrollY = $(window).scrollTop(),
+        elPosition = $('.apeal-box').offset().top;
+        if (scrollY > elPosition - windowH) {
+          $('.apeal-box').css('transform','translateX(0%)').css('opacity','1');
+          $('.card-img-slide').css('transform','translateX(0%)').css('opacity','1');
+          $('.card-body-slide').css('transform','translateX(0%)').css('opacity','1');
+        }
+      });
+
+      $(window).scroll(function() {
+        var windowH = $(window).height(),
+        scrollY = $(window).scrollTop(),
+        elPosition = $('.apeal-box-1').offset().top;
+        if (scrollY > elPosition - windowH) {
+          $('.apeal-box-1').css('transform','translateX(0%)').css('opacity','1');
+          $('.card-img-slide-1').css('transform','translateX(0%)').css('opacity','1');
+          $('.card-body-slide-1').css('transform','translateX(0%)').css('opacity','1');
+        }
+      });
+
+      $(window).scroll(function() {
+        var windowH = $(window).height(),
+        scrollY = $(window).scrollTop(),
+        elPosition = $('.apeal-box-2').offset().top;
+        if (scrollY > elPosition - windowH) {
+          $('.apeal-box-2').css('transform','translateX(0%)').css('opacity','1');
+          $('.card-img-slide-2').css('transform','translateX(0%)').css('opacity','1');
+          $('.card-body-slide-2').css('transform','translateX(0%)').css('opacity','1');
+        }
+      });
+
+      $(window).scroll(function() {
+        var windowH = $(window).height(),
+        scrollY = $(window).scrollTop(),
+        elPosition = $('.apeal-box-3').offset().top;
+        if (scrollY > elPosition - windowH) {
+          $('.apeal-box-3').css('transform','translateX(0%)').css('opacity','1');
+          $('.card-img-slide-3').css('transform','translateX(0%)').css('opacity','1');
+          $('.card-body-slide-3').css('transform','translateX(0%)').css('opacity','1');
+        }
+      });
+
+      $(window).scroll(function() {
+        var windowH = $(window).height(),
+        scrollY = $(window).scrollTop(),
+        elPosition = $('.apeal-box-4').offset().top;
+        if (scrollY > elPosition - windowH) {
+          $('.apeal-box-4').css('transform','translateX(0%)').css('opacity','1');
+          $('.card-img-slide-4').css('transform','translateX(0%)').css('opacity','1');
+          $('.card-body-slide-4').css('transform','translateX(0%)').css('opacity','1');
+        }
+      });
+
+      $('#inquietude').css('transform','translateY(50%)').css('opacity','0');
+      $(window).scroll(function() {
+        var windowH = $(window).height(),
+        scrollY = $(window).scrollTop(),
+        elPosition = $('#inquietude').offset().top;
+        if (scrollY > elPosition - windowH) {
+          $('#inquietude').css('transform','translateX(0%)').css('opacity','1');
+        }
+      });
+
+      $('#problems').css('transform','translateY(50%)').css('opacity','0');
+      $(window).scroll(function() {
+        var windowH = $(window).height(),
+        scrollY = $(window).scrollTop(),
+        elPosition = $('#problems').offset().top;
+        if (scrollY > elPosition - windowH) {
+          $('#problems').css('transform','translateX(0%)').css('opacity','1');
+        }
+      });
+
+      $('#for-you').css('transform','translateY(50%)').css('opacity','0');
+      $(window).scroll(function() {
+        var windowH = $(window).height(),
+        scrollY = $(window).scrollTop(),
+        elPosition = $('#for-you').offset().top;
+        if (scrollY > elPosition - windowH) {
+          $('#for-you').css('transform','translateX(0%)').css('opacity','1');
+        }
+      });
+
+      $('#what-is').css('transform','translateY(50%)').css('opacity','0');
+      $(window).scroll(function() {
+        var windowH = $(window).height(),
+        scrollY = $(window).scrollTop(),
+        elPosition = $('#what-is').offset().top;
+        if (scrollY > elPosition - windowH) {
+          $('#what-is').css('transform','translateX(0%)').css('opacity','1');
+        }
+      });
+
+      $('#chart').css('transform','translateY(50%)').css('opacity','0');
+      $(window).scroll(function() {
+        var windowH = $(window).height(),
+        scrollY = $(window).scrollTop(),
+        elPosition = $('#chart').offset().top;
+        if (scrollY > elPosition - windowH) {
+          $('#chart').css('transform','translateX(0%)').css('opacity','1');
+        }
+      });
+
+      $('#points').css('transform','translateY(50%)').css('opacity','0');
+      $(window).scroll(function() {
+        var windowH = $(window).height(),
+        scrollY = $(window).scrollTop(),
+        elPosition = $('#points').offset().top;
+        if (scrollY > elPosition - windowH) {
+          $('#points').css('transform','translateX(0%)').css('opacity','1');
+        }
+      });
+
+      $('#plans').css('transform','translateY(50%)').css('opacity','0');
+      $(window).scroll(function() {
+        var windowH = $(window).height(),
+        scrollY = $(window).scrollTop(),
+        elPosition = $('#plans').offset().top;
+        if (scrollY > elPosition - windowH) {
+          $('#plans').css('transform','translateX(0%)').css('opacity','1');
+        }
+      });
+
+      $('#pricelist').css('transform','translateY(50%)').css('opacity','0');
+      $(window).scroll(function() {
+        var windowH = $(window).height(),
+        scrollY = $(window).scrollTop(),
+        elPosition = $('#pricelist').offset().top;
+        if (scrollY > elPosition - windowH) {
+          $('#pricelist').css('transform','translateX(0%)').css('opacity','1');
+        }
+      });
+
+      $('#FAQ').css('transform','translateY(50%)').css('opacity','0');
+      $(window).scroll(function() {
+        var windowH = $(window).height(),
+        scrollY = $(window).scrollTop(),
+        elPosition = $('#FAQ').offset().top;
+        if (scrollY > elPosition - windowH) {
+          $('#FAQ').css('transform','translateX(0%)').css('opacity','1');
+        }
+      });
+
+      $('#campagne-btn').css('transform','translateY(50%)').css('opacity','0');
+      $(window).scroll(function() {
+        var windowH = $(window).height(),
+        scrollY = $(window).scrollTop(),
+        elPosition = $('#campagne-btn').offset().top;
+        if (scrollY > elPosition - windowH) {
+          $('#campagne-btn').css('transform','translateX(0%)').css('opacity','1');
+        }
+      });
+
+      $('#access').css('transform','translateY(50%)').css('opacity','0');
+      $(window).scroll(function() {
+        var windowH = $(window).height(),
+        scrollY = $(window).scrollTop(),
+        elPosition = $('#access').offset().top;
+        if (scrollY > elPosition - windowH) {
+          $('#access').css('transform','translateX(0%)').css('opacity','1');
+        }
+      });
+
+      $('#studio').css('transform','translateY(50%)').css('opacity','0');
+      $(window).scroll(function() {
+        var windowH = $(window).height(),
+        scrollY = $(window).scrollTop(),
+        elPosition = $('#studio').offset().top;
+        if (scrollY > elPosition - windowH) {
+          $('#studio').css('transform','translateX(0%)').css('opacity','1');
+        }
+      });
+
+
+       
+    </script>
+  </body>
+</html>
+  
